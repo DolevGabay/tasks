@@ -2,8 +2,8 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net5.0</TargetFramework>
-    <LangVersion>10.0</LangVersion> <!-- Add this line -->
+    <TargetFramework>net8.0.1</TargetFramework>
+    <LangVersion>10.0</LangVersion> <!-- Include this line if not present -->
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
