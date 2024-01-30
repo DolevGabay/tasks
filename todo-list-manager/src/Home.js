@@ -19,7 +19,7 @@ const Home = () => {
     e.preventDefault();
 
     try {
-        const response = await fetch('http://localhost:8080/signup', {
+        const response = await fetch('http://3.71.7.179:8080/signup', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
