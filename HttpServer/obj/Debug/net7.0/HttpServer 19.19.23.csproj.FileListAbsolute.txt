@@ -1,0 +1,15 @@
+/Users/dolevgabay/Desktop/oversight/HttpServer/bin/Debug/net7.0/HttpServer 19.19.23
+/Users/dolevgabay/Desktop/oversight/HttpServer/bin/Debug/net7.0/HttpServer 19.19.23.deps.json
+/Users/dolevgabay/Desktop/oversight/HttpServer/bin/Debug/net7.0/HttpServer 19.19.23.runtimeconfig.json
+/Users/dolevgabay/Desktop/oversight/HttpServer/bin/Debug/net7.0/HttpServer 19.19.23.dll
+/Users/dolevgabay/Desktop/oversight/HttpServer/bin/Debug/net7.0/HttpServer 19.19.23.pdb
+/Users/dolevgabay/Desktop/oversight/HttpServer/obj/Debug/net7.0/HttpServer 19.19.23.csproj.AssemblyReference.cache
+/Users/dolevgabay/Desktop/oversight/HttpServer/obj/Debug/net7.0/HttpServer 19.19.23.GeneratedMSBuildEditorConfig.editorconfig
+/Users/dolevgabay/Desktop/oversight/HttpServer/obj/Debug/net7.0/HttpServer 19.19.23.AssemblyInfoInputs.cache
+/Users/dolevgabay/Desktop/oversight/HttpServer/obj/Debug/net7.0/HttpServer 19.19.23.AssemblyInfo.cs
+/Users/dolevgabay/Desktop/oversight/HttpServer/obj/Debug/net7.0/HttpServer 19.19.23.csproj.CoreCompileInputs.cache
+/Users/dolevgabay/Desktop/oversight/HttpServer/obj/Debug/net7.0/HttpServer 19.19.23.dll
+/Users/dolevgabay/Desktop/oversight/HttpServer/obj/Debug/net7.0/refint/HttpServer 19.19.23.dll
+/Users/dolevgabay/Desktop/oversight/HttpServer/obj/Debug/net7.0/HttpServer 19.19.23.pdb
+/Users/dolevgabay/Desktop/oversight/HttpServer/obj/Debug/net7.0/HttpServer 19.19.23.genruntimeconfig.cache
+/Users/dolevgabay/Desktop/oversight/HttpServer/obj/Debug/net7.0/ref/HttpServer 19.19.23.dll
