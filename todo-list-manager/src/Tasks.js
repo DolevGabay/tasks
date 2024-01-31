@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import './Tasks.css';
 import { removeTask, checkInput, checkUser, sortTasks, getOpenTasks, getThisWeekTasks, getAllTasks, getClosedTasks, getStatisticsByPeriod, deleteUser } from './TasksUtills';
+import { API_BASE_URL } from './config';
 
 const Tasks = () => {
   const location = useLocation();
@@ -56,7 +57,7 @@ const Tasks = () => {
         return;
       }
   
-      const response = await fetch('http://localhost:8080/add-task', {
+      const response = await fetch(`${API_BASE_URL}/add-task`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -104,7 +105,7 @@ const Tasks = () => {
       }
       editFormValues.uuid = editTaskId;
   
-      const response = await fetch('http://localhost:8080/edit-task', {
+      const response = await fetch(`${API_BASE_URL}/edit-task`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

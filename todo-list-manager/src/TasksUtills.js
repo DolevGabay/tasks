@@ -1,6 +1,8 @@
+import { API_BASE_URL } from './config';
+
 const removeTask = (taskId, setTasks, setFormValues) => {
 
-    fetch('http://localhost:8080/remove-task', {
+    fetch(`${API_BASE_URL}/remove-task`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -49,7 +51,7 @@ return true;
 } 
 
 const checkUser = async (username) => {
-    const url = 'http://localhost:8080/user-exist?user=' + encodeURIComponent(username) ;
+    const url = `${API_BASE_URL}/user-exist?user=` + encodeURIComponent(username) ;
     console.log(url)
 
     try {
@@ -76,7 +78,7 @@ const checkUser = async (username) => {
   };
 
   const sortTasks = async (setTasks) => {
-    const url = 'http://localhost:8080/sort-old-to-new?user=' + encodeURIComponent("user") ;
+    const url = `${API_BASE_URL}/sort-old-to-new?user=` + encodeURIComponent("user") ;
 
     try {
         const response = await fetch(url, {
@@ -99,7 +101,7 @@ const checkUser = async (username) => {
   
 
   const getOpenTasks = async (setTasks) => {
-    const url = 'http://localhost:8080/open-tasks?user=' + encodeURIComponent("user") ;
+    const url = `${API_BASE_URL}/open-tasks?user=` + encodeURIComponent("user") ;
 
     try {
         const response = await fetch(url, {
@@ -122,7 +124,7 @@ const checkUser = async (username) => {
     }; 
 
     const getThisWeekTasks = async (setTasks) => {
-        const url = 'http://localhost:8080/this-week-tasks?user=' + encodeURIComponent("user") ;
+        const url = `${API_BASE_URL}/this-week-tasks?user=` + encodeURIComponent("user") ;
     
         try {
             const response = await fetch(url, {
@@ -145,7 +147,7 @@ const checkUser = async (username) => {
       
 
 const getAllTasks = async (setTasks) => {
-const url = 'http://localhost:8080/get-tasks?user=' + encodeURIComponent("user");
+const url = `${API_BASE_URL}/get-tasks?user=` + encodeURIComponent("user");
 
     try {
     const response = await fetch(url, {
@@ -171,7 +173,7 @@ const url = 'http://localhost:8080/get-tasks?user=' + encodeURIComponent("user")
 };  
 
 const getClosedTasks = async (setTasks) => {
-    const url = 'http://localhost:8080/closed-tasks?user=' + encodeURIComponent("user") ;
+    const url = `${API_BASE_URL}/closed-tasks?user=` + encodeURIComponent("user") ;
 
     try {
         const response = await fetch(url, {
@@ -194,7 +196,7 @@ const getClosedTasks = async (setTasks) => {
 
 
 const getStatisticsByPeriod = async (setUsers, startDate, endDate) => {
-const url = 'http://localhost:8080/statistics-get-best-users-by-period?start-date=' + encodeURIComponent(startDate) + '&end-date=' + encodeURIComponent(endDate);
+const url = `${API_BASE_URL}/statistics-get-best-users-by-period?start-date=` + encodeURIComponent(startDate) + '&end-date=' + encodeURIComponent(endDate);
 
     try {
     const response = await fetch(url, {
@@ -217,7 +219,7 @@ const url = 'http://localhost:8080/statistics-get-best-users-by-period?start-dat
 };  
 
 const deleteUser = async (username) => {
-    fetch('http://localhost:8080/delete-user', {
+    fetch(`${API_BASE_URL}/delete-user`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

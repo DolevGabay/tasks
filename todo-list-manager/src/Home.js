@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Home.css';
+import { API_BASE_URL } from './config';
 
 const Home = () => {
   const [user, setUser] = useState('');
@@ -19,7 +20,7 @@ const Home = () => {
     e.preventDefault();
 
     try {
-        const response = await fetch('http://3.71.7.179:8080/signup', {
+        const response = await fetch(`${API_BASE_URL}/signup`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -48,7 +49,7 @@ const Home = () => {
 const handleLogin = async (e) => {
   e.preventDefault();
   
-  const url = 'http://localhost:8080/login?user=' + encodeURIComponent(user) + '&password=' + encodeURIComponent(password);
+  const url = `${API_BASE_URL}/login?user=` + encodeURIComponent(user) + '&password=' + encodeURIComponent(password);
 
   try {
       const response = await fetch(url, {
